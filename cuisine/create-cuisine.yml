@@ -1,5 +1,5 @@
 info:
-  name: createCuisine
+  name: create-cuisine
   type: http
   seq: 2
 
@@ -8,7 +8,7 @@ http:
   url: "{{baseUrl}}/api/v1/cuisines"
   headers:
     - name: Authorization
-      value: "Bearer {{accessToken}}"
+      value: Bearer {{accessToken}}
   body:
     type: json
     data: |-

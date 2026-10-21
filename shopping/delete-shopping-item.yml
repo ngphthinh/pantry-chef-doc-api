@@ -5,10 +5,10 @@ info:
 
 http:
   method: DELETE
-  url: "{{baseUrl}}/api/v1/shopping-lists/{{shoppingListId}}/items/{{shoppingItemId}}"
+  url: "{{baseUrl}}/api/v1/shopping-lists/01a15f02-6412-7b7d-92b8-7dadd64b7f89/items/{{shoppingItemId}}"
   headers:
     - name: Authorization
-      value: "Bearer {{accessToken}}"
+      value: Bearer {{accessToken}}
   auth: inherit
 
 settings:

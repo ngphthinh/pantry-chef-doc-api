@@ -1,5 +1,5 @@
 info:
-  name: getCuisines
+  name: get-cuisines
   type: http
   seq: 1
 
