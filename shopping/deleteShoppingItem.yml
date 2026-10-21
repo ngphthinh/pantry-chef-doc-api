@@ -1,0 +1,19 @@
+info:
+  name: deleteShoppingItem
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/shopping-lists/{{shoppingListId}}/items/{{shoppingItemId}}"
+  headers:
+    - name: Authorization
+      value: "Bearer {{accessToken}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
