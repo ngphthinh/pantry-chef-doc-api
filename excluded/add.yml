@@ -1,0 +1,22 @@
+info:
+  name: add
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/users/me/excluded-ingredients"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Hải sản"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

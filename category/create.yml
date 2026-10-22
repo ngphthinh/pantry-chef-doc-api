@@ -1,0 +1,23 @@
+info:
+  name: create
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/ingredient-categories"
+  body:
+    type: json
+    data: |-
+      {
+        "code": "SNACK",
+        "name": "Đồ ăn vặt"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
