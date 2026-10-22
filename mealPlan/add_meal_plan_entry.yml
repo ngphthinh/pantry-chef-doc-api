@@ -1,0 +1,25 @@
+info:
+  name: " add_meal_plan_entry"
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/meal-plans/00000008-0000-0000-0000-000000000001/entries"
+  body:
+    type: json
+    data: |-
+      {
+        "date": "2026-11-29",
+        "mealType": "LUNCH",
+        "recipeId": "00000004-0000-0000-0000-000000000006",
+        "servings": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

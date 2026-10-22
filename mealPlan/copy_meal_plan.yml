@@ -1,0 +1,20 @@
+info:
+  name: copy_meal_plan
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/meal-plans/01a15ed9-1111-7ca2-b200-f0f184f7b92d/copy?toWeekStart=2026-10-26"
+  params:
+    - name: toWeekStart
+      value: 2026-10-26
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
