@@ -2,6 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: pantry-chef
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNjQzOC1kMDQ4LTczYjYtYTdiMy05ZjM4NzYyNDU5YWUiLCJzY29wZSI6IlJPTEVfVVNFUiBST0xFX0FETUlOIiwiaXNzIjoicGFudHJ5LWNoZWYiLCJleHAiOjE3OTI2ODY1NjMsImlhdCI6MTc5MjY4Mjk2MywianRpIjoiZWQwNjFkYjUtNDZkNy00MjllLTkwYzMtZDRhZWRjOTA0YzE5IiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.W1jMGMo_SRDCvraRTMI0mgIIXk2YslwmfKtw4POva7OPdVWcupTlQzNYXO-OaIruUjO20opX5Q12hFVilFgsmg
 bundled: false
 extensions:
   bruno:

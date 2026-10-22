@@ -1,0 +1,26 @@
+info:
+  name: getPantryCursor
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/pantry-items?size=10&location=FRIDGE&keyword=bò"
+  params:
+    - name: size
+      value: "10"
+      type: query
+    - name: location
+      value: FRIDGE
+      type: query
+    - name: keyword
+      value: bò
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

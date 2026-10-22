@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "refreshToken": "01a0c9b4-337e-7b91-9f18-cc9ceb5a595d"
+        "refreshToken": "2ca1bbe5-a5be-4ec0-8c6d-f45b484d5533"
       }
   auth: inherit
 

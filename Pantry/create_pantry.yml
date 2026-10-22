@@ -1,0 +1,28 @@
+info:
+  name: create_pantry
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/pantry-items"
+  body:
+    type: json
+    data: |
+      
+      {
+        "ingredientId": "01a163de-4ea5-7675-bbe0-3cad49b028d3",
+        "quantity": 2.0,
+        "unit": "G",
+        "location": "FRIDGE",
+        "expiryDate": "2026-10-25",
+        "photoUri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
