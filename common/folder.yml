@@ -1,0 +1,9 @@
+info:
+  name: common
+  type: folder
+  seq: 13
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmQyMC1mMmViLTdiMWQtOTgzZi00NzNiODcyNmE4ODciLCJzY29wZSI6IlJPTEVfQURNSU4gUk9MRV9VU0VSIiwiaXNzIjoicGFudHJ5LWNoZWYiLCJleHAiOjE3OTMxOTIzMzUsImlhdCI6MTc5MjgzMjMzNSwianRpIjoiODliZjE2NGUtMWZjNC00NzJjLWEzNTAtZWI3NDlmYjljYTM2IiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.6tE9XCpeoLa004GKTWJ1iiiRkv0WiRINsYPxwIU2WPNkTFLTi_AyfgLH_H5YNRuZY75P0-ROP0kY3alTxcbWhA

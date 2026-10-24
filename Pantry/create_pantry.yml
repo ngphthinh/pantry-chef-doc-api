@@ -11,7 +11,7 @@ http:
     data: |
       
       {
-        "ingredientId": "01a163de-4ea5-7675-bbe0-3cad49b028d3",
+        "ingredientId": "01a16917-6611-783b-876a-3438a3597a32",
         "quantity": 2.0,
         "unit": "G",
         "location": "FRIDGE",

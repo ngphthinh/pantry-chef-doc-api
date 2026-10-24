@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/pantry-items/00000007-0000-0000-0000-000000000002/consume"
+  url: "{{baseUrl}}/api/v1/pantry-items/01a16c3e-9066-748d-9866-16ef0c7bd3fe/consume"
   body:
     type: json
     data: |-
       {
-        "amount": 0.5
+        "quantity": 0.5
       }
   auth: inherit
 

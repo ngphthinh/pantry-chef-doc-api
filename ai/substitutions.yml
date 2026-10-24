@@ -10,8 +10,9 @@ http:
     type: json
     data: |-
       {
-        "recipeTitle": "Phở bò",
-        "missingIngredient": "Hoa hồi"
+        "recipeId": "123e4567-e89b-12d3-a456-426614174000",
+        "recipeTitle": "Bún chả",
+        "missingIngredient": "Sả"
       }
   auth: inherit
 

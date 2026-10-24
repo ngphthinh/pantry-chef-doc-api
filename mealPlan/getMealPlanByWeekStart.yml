@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/meal-plans?weekStart=2026-10-19"
+  url: "{{baseUrl}}/api/v1/meal-plans?weekStart=2026-12-02"
   params:
     - name: weekStart
-      value: 2026-10-19
+      value: 2026-12-02
       type: query
   auth: inherit
 

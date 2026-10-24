@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{baseUrl}}/api/v1/ingredients/{{ingredientId}}"
+  url: "{{baseUrl}}/api/v1/ingredients/01a16c92-bade-7487-83db-2bbd52f42164"
   auth: inherit
 
 settings:

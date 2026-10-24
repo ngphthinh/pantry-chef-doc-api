@@ -1,0 +1,26 @@
+info:
+  name: convert units
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/units/convert?value=1000&from=MG&to=G"
+  params:
+    - name: value
+      value: "1000"
+      type: query
+    - name: from
+      value: MG
+      type: query
+    - name: to
+      value: G
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

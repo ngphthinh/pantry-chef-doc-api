@@ -5,8 +5,7 @@ info:
 
 http:
   method: GET
-  url: ""
-  auth: inherit
+  url: "{{baseUrl}}/api/v1/ingredient-categories"
 
 settings:
   encodeUrl: true

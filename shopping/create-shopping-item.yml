@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/shopping-lists/{{shoppingListId}}/items"
+  url: "{{baseUrl}}/api/v1/shopping-lists/01a16c49-b57a-71fc-8f2f-9ff62a4752ba/items"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}

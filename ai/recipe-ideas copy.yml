@@ -1,0 +1,22 @@
+info:
+  name: recipe-ideas copy
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/ai/adapt-recipe"
+  body:
+    type: json
+    data: |
+      {
+        "recipeId": "01a16d21-88c3-7eb7-b58f-80aed95cc3b6"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

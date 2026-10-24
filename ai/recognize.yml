@@ -12,7 +12,7 @@ http:
       - name: image
         type: file
         value:
-          - C:\Users\Admin\Pictures\1.png
+          - C:\Users\Admin\Pictures\download.png
         contentType: image/png
   auth: inherit
 

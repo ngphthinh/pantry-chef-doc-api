@@ -6,6 +6,15 @@ info:
 http:
   method: POST
   url: "{{baseUrl}}/api/v1/ingredients"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Sugar",
+        "defaultUnit": "G",
+        "categoryId": "01a16917-6570-7709-af0b-f0f9cfab5719",
+        "barcode": "1234567890123"
+      }
   auth: inherit
 
 settings:

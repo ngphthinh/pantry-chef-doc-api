@@ -5,13 +5,15 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/pantry-items/01a15eb1-532d-74f1-90b2-f2e12b53aa27/photo"
+  url: "{{baseUrl}}/api/v1/pantry-items/01a16c3e-9066-748d-9866-16ef0c7bd3fe/photo"
   body:
     type: multipart-form
     data:
       - name: "image "
-        type: text
-        value: ""
+        type: file
+        value:
+          - C:\Users\Admin\Pictures\1.png
+        contentType: image/png
   auth: inherit
 
 settings:

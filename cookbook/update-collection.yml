@@ -1,0 +1,27 @@
+info:
+  name: update-collection
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/collections/01a16e18-fbe8-7ec6-b8b6-7218a7f15717"
+  params:
+    - name: favorite
+      value: "true"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "name": "123 ALOALO"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

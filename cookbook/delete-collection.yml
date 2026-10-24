@@ -1,0 +1,21 @@
+info:
+  name: delete-collection
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/collections/01a16d2b-62b5-7502-880a-699cc330d11a"
+  params:
+    - name: favorite
+      value: "true"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

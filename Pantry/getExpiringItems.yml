@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/pantry-items/expiring?days=3"
+  url: "{{baseUrl}}/api/v1/pantry-items/expiring?days=7"
   params:
     - name: days
-      value: "3"
+      value: "7"
       type: query
   auth: inherit
 

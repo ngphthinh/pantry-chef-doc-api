@@ -1,0 +1,28 @@
+info:
+  name: create-save-recipe
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/saved-recipes"
+  params:
+    - name: favorite
+      value: "true"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: |-
+      {
+      //   "externalId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "recipeId": "01a16d21-88c3-7eb7-b58f-80aed95cc3b6"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

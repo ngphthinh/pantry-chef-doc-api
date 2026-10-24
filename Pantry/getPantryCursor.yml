@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/pantry-items?size=10&location=FRIDGE&keyword=bò"
+  url: "{{baseUrl}}/api/v1/pantry-items?size=10"
   params:
     - name: size
       value: "10"
@@ -13,9 +13,11 @@ http:
     - name: location
       value: FRIDGE
       type: query
+      disabled: true
     - name: keyword
       value: bò
       type: query
+      disabled: true
   auth: inherit
 
 settings:

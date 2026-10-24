@@ -1,0 +1,29 @@
+info:
+  name: get-fb
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/feedback?size=20"
+  params:
+    - name: size
+      value: "20"
+      type: query
+  body:
+    type: json
+    data: |
+      {
+        "type": "BUG",
+        "message": "string",
+        "appVersion": "string",
+        "deviceInfo": "string"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

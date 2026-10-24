@@ -5,7 +5,24 @@ info:
 
 http:
   method: GET
-  url: ""
+  url: "{{baseUrl}}/api/v1/ingredients/search"
+  params:
+    - name: q
+      value: ca
+      type: query
+      disabled: true
+    - name: categoryId
+      value: 01a16917-6570-7709-af06-121b3b75d315
+      type: query
+      disabled: true
+    - name: cursor
+      value: 01a16917-6611-783b-877d-32c809581208
+      type: query
+      disabled: true
+    - name: size
+      value: ""
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

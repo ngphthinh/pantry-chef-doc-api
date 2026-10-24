@@ -5,14 +5,14 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/api/v1/ingredients/{{ingredientId}}"
+  url: "{{baseUrl}}/api/v1/ingredients/01a16c92-bade-7487-83db-2bbd52f42164"
   body:
     type: json
     data: |-
       {
         "name": "Cà tím",
         "defaultUnit": "PCS",
-        "categoryId": "{{categoryId}}",
+        "categoryId": "01a16917-6570-7709-af0b-f0f9cfab5719",
         "barcode": "8934000000042"
       }
   auth: inherit

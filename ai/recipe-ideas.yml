@@ -1,0 +1,24 @@
+info:
+  name: recipe-ideas
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/ai/recipe-ideas"
+  body:
+    type: json
+    data: |-
+      {
+        "limit": 5,
+        "maxCookingMinutes": 30,
+        "cuisine": "Vietnam"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

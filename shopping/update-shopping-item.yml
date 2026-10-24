@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{baseUrl}}/api/v1/shopping-lists/01a15f02-6412-7b7d-92b8-7dadd64b7f89/items/01a15f05-e618-7ad7-b620-096db68d759f"
+  url: "{{baseUrl}}/api/v1/shopping-lists/01a16c49-b57a-71fc-8f2f-9ff62a4752ba/items/01a16c49-e906-7f48-9758-eb9b94428e2b"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
@@ -14,9 +14,9 @@ http:
     data: |-
       {
         "name": "Milk",
-        "quantity": 2,
-        "unit": "PCS",
-        "status": "PENDING"
+        "quantity": 1,
+      //   "unit": "MG"
+      //   "status": "PENDING"
       }
   auth: inherit
 

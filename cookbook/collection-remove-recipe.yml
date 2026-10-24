@@ -1,0 +1,21 @@
+info:
+  name: collection-remove-recipe
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/collections/01a16e1c-194f-7e63-8bd7-820e656c54c2/recipes/01a16d2b-6247-724b-bf21-e23cb71eddd6"
+  params:
+    - name: favorite
+      value: "true"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

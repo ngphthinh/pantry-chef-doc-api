@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/meal-plans/00000008-0000-0000-0000-000000000002"
+  url: "{{baseUrl}}/api/v1/meal-plans/01a16cef-97bd-76ca-9c72-c6c0a33d6a19"
   auth: inherit
 
 settings:
