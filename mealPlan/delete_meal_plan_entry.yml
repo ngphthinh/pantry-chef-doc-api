@@ -1,0 +1,16 @@
+info:
+  name: delete_meal_plan_entry
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/meal-plans/00000008-0000-0000-0000-000000000001/entries/00000009-0000-0000-0001-000000000007"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

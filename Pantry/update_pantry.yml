@@ -1,0 +1,26 @@
+info:
+  name: "update_pantry "
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/pantry-items/01a15eb1-532d-74f1-90b2-f2e12b53aa27"
+  body:
+    type: json
+    data: |-
+      {
+        "quantity": 3.5,
+        "unit": "KG",
+        "location": "FREEZER",
+        "expiryDate": "2027-01-15",
+        "photoUri": "https://res.cloudinary.com/demo/image/upload/sample.jpg"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

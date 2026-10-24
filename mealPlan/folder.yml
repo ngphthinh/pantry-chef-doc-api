@@ -1,0 +1,9 @@
+info:
+  name: mealPlan
+  type: folder
+  seq: 3
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmNlYS0yZTNiLTdhYjQtYjU0Mi0zM2ZjNGViZmI5MzciLCJzY29wZSI6IlJPTEVfVVNFUiBST0xFX0FETUlOIiwiaXNzIjoicGFudHJ5LWNoZWYiLCJleHAiOjE3OTMxODg2ODYsImlhdCI6MTc5MjgyODY4NiwianRpIjoiNDI0MjVhODUtNTBlMy00YTI0LTgzZWItMTAyNzgzOTFhMmNiIiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.8zhEHkyAEtG9JvU2BlsWwQ-txffXRonP64VKf05iMoWGmQIzbApT2EoptzEhxxdBI-5O-2U7YkDrINW-RkACAA
