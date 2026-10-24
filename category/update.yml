@@ -5,13 +5,13 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/api/v1/ingredient-categories/{{categoryId}}"
+  url: "{{baseUrl}}/api/v1/ingredient-categories/01a161ae-bfff-78a7-99d7-1bbdc58b5c9e"
   body:
     type: json
     data: |-
       {
         "code": "SNACK",
-        "name": "Đồ ăn vặt"
+        "name": "Bim bim"
       }
   auth: inherit
 

@@ -5,7 +5,20 @@ info:
 
 http:
   method: GET
-  url: ""
+  url: "{{baseUrl}}/api/v1/ingredients/search?q=&categoryId=01a16194-594b-7db7-9bce-c220437c5f1d&cursor=&size=20"
+  params:
+    - name: q
+      value: ""
+      type: query
+    - name: categoryId
+      value: 01a16194-594b-7db7-9bce-c220437c5f1d
+      type: query
+    - name: cursor
+      value: ""
+      type: query
+    - name: size
+      value: "20"
+      type: query
   auth: inherit
 
 settings:

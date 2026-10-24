@@ -6,6 +6,15 @@ info:
 http:
   method: POST
   url: "{{baseUrl}}/api/v1/ingredients"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Cà tím",
+        "defaultUnit": "PCS",
+        "categoryId": "01a16194-594a-7dbe-8ff5-7ea4fb1e7a3d",
+        "barcode": "8934000000042"
+      }
   auth: inherit
 
 settings:
