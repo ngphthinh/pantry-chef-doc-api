@@ -1,0 +1,25 @@
+info:
+  name: update
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/ingredients/{{ingredientId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Cà tím",
+        "defaultUnit": "PCS",
+        "categoryId": "{{categoryId}}",
+        "barcode": "8934000000042"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
