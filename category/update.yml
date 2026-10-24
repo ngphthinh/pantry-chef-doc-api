@@ -11,9 +11,14 @@ http:
     data: |-
       {
         "code": "SNACK",
-        "name": "Đồ ăn vặt"
+        "name": "Đồ ăn vặt vặt"
       }
   auth: inherit
+
+runtime:
+  variables:
+    - name: categoryId
+      value: 01a16c7c-d0e7-72dc-8e9c-690554919a9e
 
 settings:
   encodeUrl: true
