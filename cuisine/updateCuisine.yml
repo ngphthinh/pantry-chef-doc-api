@@ -5,15 +5,15 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/api/v1/cuisines/{{cuisineId}}"
+  url: "{{baseUrl}}/api/v1/cuisines/01a15efe-fc8a-7354-a63e-4dd4c48710d5"
   headers:
     - name: Authorization
-      value: "Bearer {{accessToken}}"
+      value: Bearer {{accessToken}}
   body:
     type: json
     data: |-
       {
-        "code": "JAPANESE",
+        "code": "JAPANESE3",
         "name": "Japanese cuisine"
       }
   auth: inherit

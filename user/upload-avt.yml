@@ -7,13 +7,16 @@ http:
   method: PUT
   url: "{{baseUrl}}/api/v1/users/me/avatar"
   body:
-    type: json
-    data: |-
-      {
-        "displayName": "John Doe",
-        "measurementSystem": "IMPERIAL",
-        "themeMode": "SYSTEM"
-      }
+    type: multipart-form
+    data:
+      - name: avatar
+        type: file
+        value:
+          - D:\Workspace\MyLove\z6656203106956_deae860b9c63e73d8ce93ac4bfb5e41f.jpg
+        contentType: image/jpeg
+      - name: ""
+        type: text
+        value: ""
   auth: inherit
 
 settings:

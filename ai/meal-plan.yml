@@ -1,0 +1,24 @@
+info:
+  name: meal-plan
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/ai/meal-plan"
+  body:
+    type: json
+    data: |-
+      {
+        "recipeId": "123e4567-e89b-12d3-a456-426614174000",
+        "recipeTitle": "Bún chả",
+        "missingIngredient": "Sả"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

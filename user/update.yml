@@ -4,8 +4,18 @@ info:
   seq: 2
 
 http:
-  method: PUT
-  url: "{{baseUrl}}/api/v1/users/me"
+  method: GET
+  url: "{{baseUrl}}/api/v1/users/admin?keyword=ri&cursor=01a15eea-2fc5-7723-b794-96f8f0029eb7&size=20"
+  params:
+    - name: keyword
+      value: ri
+      type: query
+    - name: cursor
+      value: 01a15eea-2fc5-7723-b794-96f8f0029eb7
+      type: query
+    - name: size
+      value: "20"
+      type: query
   body:
     type: json
     data: |-

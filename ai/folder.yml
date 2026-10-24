@@ -1,0 +1,9 @@
+info:
+  name: ai
+  type: folder
+  seq: 5
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNWVlOS01NGQ5LTc1NGYtYjk2Mi1lNmY0Nzc0OWE4ZDQiLCJzY29wZSI6IlJPTEVfVVNFUiBST0xFX0FETUlOIiwiaXNzIjoicGFudHJ5LWNoZWYiLCJleHAiOjE3OTI4MjExNTcsImlhdCI6MTc5MjgxNzU1NywianRpIjoiYTQ4N2UyNDAtNDk5My00YzkyLThjNjAtNmRiY2YzYjRlOWViIiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.vgU7NobGQ3KsxC7Bl-97vo1EI1huEy6P1CZOsPR7LA08cv-0hWZuR0HRy7sbZUA4sMAVsTAqQcbJSktxm--ALg
