@@ -5,14 +5,14 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/meal-plans/00000008-0000-0000-0000-000000000001/entries"
+  url: "{{baseUrl}}/api/v1/meal-plans/01a17149-b504-7591-8a0e-6216aba83472/entries"
   body:
     type: json
     data: |-
       {
-        "date": "2026-11-29",
+        "date": "2026-11-21",
         "mealType": "LUNCH",
-        "recipeId": "00000004-0000-0000-0000-000000000006",
+        "recipeId": "01a17142-33aa-7007-a31b-8a3644db560b",
         "servings": 2
       }
   auth: inherit

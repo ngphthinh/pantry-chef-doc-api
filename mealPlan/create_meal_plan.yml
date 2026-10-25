@@ -5,7 +5,27 @@ info:
 
 http:
   method: POST
-  url: ""
+  url: "{{baseUrl}}/api/v1/meal-plans"
+  body:
+    type: json
+    data: |-
+      {
+        "weekStart": "2026-11-20",
+        "entries": [
+          {
+            "date": "2026-11-26",
+            "mealType": "BREAKFAST",
+            "recipeId": "01a17142-33aa-7007-a31b-8a3644db560b",
+            "servings": 2
+          },
+          {
+            "date": "2026-11-25",
+            "mealType": "DINNER",
+            "recipeId": "01a17142-33aa-7007-a31b-8a3644db560b",
+            "servings": 4
+          }
+        ]
+      }
   auth: inherit
 
 settings:

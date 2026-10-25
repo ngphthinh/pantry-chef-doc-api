@@ -5,10 +5,10 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/meal-plans/01a15ed9-1111-7ca2-b200-f0f184f7b92d/copy?toWeekStart=2026-10-26"
+  url: "{{baseUrl}}/api/v1/meal-plans/00000008-0000-0000-0000-000000000002/copy?toWeekStart=2026-11-22"
   params:
     - name: toWeekStart
-      value: 2026-10-26
+      value: 2026-11-22
       type: query
   auth: inherit
 

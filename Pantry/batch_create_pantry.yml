@@ -6,6 +6,29 @@ info:
 http:
   method: POST
   url: "{{baseUrl}}/api/v1/pantry-items/batch"
+  body:
+    type: json
+    data: |-
+      {
+        "items": [
+          {
+            "ingredientId": "00000003-0000-0000-0000-000000000007",
+            "quantity": 500.0,
+            "unit": "PCS",
+            "location": "FREEZER",
+            "expiryDate": "2026-11-30",
+            "photoUri": null
+          },
+          {
+            "ingredientId": "00000003-0000-0000-0000-000000000007",
+            "quantity": 1.0,
+            "unit": "G",
+            "location": "PANTRY_SHELF",
+            "expiryDate": "2026-10-28",
+            "photoUri": null
+          }
+        ]
+      }
   auth: inherit
 
 settings:

@@ -1,0 +1,25 @@
+info:
+  name: PATCH update_meal_plan_entry
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/v1/meal-plans/01a1712c-5dcb-715d-8f11-5dec3a839edd/entries/01a1712c-5dcb-715d-8f12-8ce6344f720a"
+  body:
+    type: json
+    data: |2-
+        {
+          "date": "2026-10-19",
+          "mealType": "BREAKFAST",
+          "servings": 1,
+          "cooked": true
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
