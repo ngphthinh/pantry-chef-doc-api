@@ -1,0 +1,42 @@
+info:
+  name: create-recipe
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/recipes/custom"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Mì hoành thánh",
+        "servings": 2,
+        "readyInMinutes": 45,
+        "difficulty": "MEDIUM",
+        "ingredients": [
+          { "name": "Mì trứng", "amount": 200, "unit": "G" },
+          { "name": "Vỏ hoành thánh", "amount": 12, "unit": "PCS" },
+          { "name": "Thịt heo xay", "amount": 200, "unit": "G" },
+          { "name": "Tôm", "amount": 100, "unit": "G" },
+          { "name": "Hành lá", "amount": 2, "unit": "PCS" },
+          { "name": "Nước dùng xương heo", "amount": 600, "unit": "ML" },
+          { "name": "Nước mắm", "amount": 1, "unit": "TBSP" },
+          { "name": "Tiêu xay", "amount": 1, "unit": "TSP" }
+        ],
+        "steps": [
+          { "text": "Trộn thịt heo xay, tôm băm, hành lá thái nhỏ, nước mắm và tiêu thành nhân" },
+          { "text": "Cho một thìa nhân vào giữa vỏ hoành thánh rồi gói lại" },
+          { "text": "Đun sôi nước dùng xương heo, nêm nếm vừa ăn", "timerSeconds": 600 },
+          { "text": "Luộc hoành thánh trong nước sôi đến khi nổi lên", "timerSeconds": 300 },
+          { "text": "Chần mì trứng, cho vào tô cùng hoành thánh, chan nước dùng và rắc hành lá", "timerSeconds": 120 }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

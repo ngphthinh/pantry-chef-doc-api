@@ -1,0 +1,21 @@
+info:
+  name: delete-recipe
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/recipes/custom/{{customRecipeId}}"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: customRecipeId
+      value: 01a170be-e532-7608-aa98-0331eb5151fc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
