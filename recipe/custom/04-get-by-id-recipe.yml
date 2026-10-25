@@ -1,0 +1,21 @@
+info:
+  name: get-by-id-recipe
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/recipes/custom/{{customRecipeId}}"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: customRecipeId
+      value: 01a17090-2ef0-7a2d-8b55-33df4405a4e8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

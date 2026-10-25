@@ -1,0 +1,41 @@
+info:
+  name: create-recipe
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/recipes/custom"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Thịt kho tàu",
+        "servings": 4,
+        "readyInMinutes": 90,
+        "difficulty": "MEDIUM",
+        "ingredients": [
+          {
+            "name": "Thịt ba chỉ",
+            "amount": 500,
+            "unit": "G"
+          }
+        ],
+        "steps": [
+          {
+            "text": "Ướp thịt"
+          },
+          {
+            "text": "Kho",
+            "timerSeconds": 3600
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: upload-image-recipe
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/recipes/custom/{{customRecipeId}}/image"
+  body:
+    type: multipart-form
+    data:
+      - name: image
+        type: file
+        value:
+          - C:\Users\CozyPC\Pictures\Screenshots\anh1.png
+        contentType: image/png
+  auth: inherit
+
+runtime:
+  variables:
+    - name: customRecipeId
+      value: 01a17090-2ef0-7a2d-8b55-33df4405a4e8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

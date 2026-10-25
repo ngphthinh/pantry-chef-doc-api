@@ -1,0 +1,48 @@
+info:
+  name: update-recipe
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/recipes/custom/{{customRecipeId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Thịt kho trứng",
+        "servings": 4,
+        "readyInMinutes": 80,
+        "difficulty": "EASY",
+        "ingredients": [
+          {
+            "name": "Thịt ba chỉ",
+            "amount": 500,
+            "unit": "G"
+          },
+          {
+            "name": "Trứng",
+            "amount": 4,
+            "unit": "PCS"
+          }
+        ],
+        "steps": [
+          {
+            "text": "Kho thịt với trứng",
+            "timerSeconds": 3000
+          }
+        ]
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: customRecipeId
+      value: 01a17090-2ef0-7a2d-8b55-33df4405a4e8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
