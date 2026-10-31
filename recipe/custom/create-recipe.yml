@@ -18,7 +18,7 @@ http:
           { "name": "Mì trứng", "amount": 200, "unit": "G" },
           { "name": "Vỏ hoành thánh", "amount": 12, "unit": "PCS" },
           { "name": "Thịt heo xay", "amount": 200, "unit": "G" },
-          { "name": "Tôm", "amount": 100, "unit": "G" },
+          { "name": "Thịt gà", "amount": 100, "unit": "G" },
           { "name": "Hành lá", "amount": 2, "unit": "PCS" },
           { "name": "Nước dùng xương heo", "amount": 600, "unit": "ML" },
           { "name": "Nước mắm", "amount": 1, "unit": "TBSP" },

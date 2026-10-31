@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/recipes/search?ingredients=shrimp&size=5"
+  url: "{{baseUrl}}/api/v1/recipes/search?ingredients= bò&size=5"
   params:
     - name: ingredients
-      value: shrimp
+      value: " bò"
       type: query
     - name: size
       value: "5"
